@@ -533,7 +533,6 @@ const setConsent = {
   'default': require('setDefaultConsentState'),
   'update':  require('updateConsentState')
 };
-//gtagSet('developer_id.<your_developer_id>', true);
 
 const consentTypes = [
   'analytics_storage',
@@ -579,7 +578,6 @@ const regionsEEA = [
 ];
 
 function getEventMessage(newState) {
-log(newState);
   const tplStorage = require('templateStorage');
   const previousState = tplStorage.getItem('previousConsentState');
   
@@ -676,7 +674,7 @@ function activateIntegrations(consentState) {
 
 // Update Consent - Global
 const newConsentState = getNewConsentState();
-log(newConsentState);
+log(data.command + ': ' + newConsentState);
 setConsent[data.command](newConsentState);
 
 // URL Passthrough & Ads Data Redaction
@@ -691,7 +689,6 @@ activateIntegrations(newConsentState);
 // Push Data Layer Event
 if (data.dataLayerEvent) {
   const event = getEventMessage(newConsentState);
-  log(event);
   require('createQueue')('dataLayer')(event);
 }
 
