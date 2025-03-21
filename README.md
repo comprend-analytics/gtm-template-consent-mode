@@ -10,7 +10,7 @@
 |:--------------------------------------------:|------------------------------------------------|
 | **Default&nbsp;Consent**                     | Set default consent state.                     |
 | **Update&nbsp;Consent**                      | Set updated consent state.                     |
-| **Region-Specific&nbsp;Behavior**            | Configure different consent state based on regions. Automatically include EEA regions for localized privacy requirements.|
+| **Region&nbsp;Specific&nbsp;Behavior**       | Configure different consent state based on regions. Automatically include EEA regions for localized privacy requirements.|
 | **Manage&nbsp;Consent&nbsp;Types**           | Configure each consent type individually or read them from a variable. Consent types include **analytics_storage**, **ad_storage**, **ad_user_data**, **ad_personalization**, and optional types like **personalization_storage**, **functionality_storage**, and **security_storage**.|
 | **Consent&nbsp;Integrations**  | Out-of-the-box integrations with Microsoft Clarity, Microsoft Advertising (UET), and Microsoft Invest (Xandr). Automatically reads relevant consent states (**analytics_storage** or **ad_storage**) to ensure compliance.|
 | **URL&nbsp;Passthrough**                     | When consent is denied, URL passthrough preserves necessary analytics/ad information in URL parameters.|
