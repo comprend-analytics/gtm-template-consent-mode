@@ -16,4 +16,6 @@ homepage: "https://www.comprend.com"
 documentation: "https://github.com/comprend-analytics/gtm-template-consent-mode"
 versions:
   - sha: 458fb8367b81b64d08889f60282466fe6db4a4f4
-    changeNotes: v1.0
+    changeNotes: v1.0 - Initial release
+  - sha: 9c32ce81d85a1e742f51be62354cbb332cd71748
+    changeNotes: v1.1 - Remove redundant console logs
